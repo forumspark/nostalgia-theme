@@ -1,0 +1,7 @@
+.item-list {
+    @apply divide-y divide-lavender-grey-300;
+}
+
+.option-list {
+    @apply space-y-2;
+}

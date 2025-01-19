@@ -1,0 +1,7 @@
+.search-input {
+    @apply flex items-center space-x-2 p-6;
+
+    & > input {
+        @apply w-full;
+    }
+}

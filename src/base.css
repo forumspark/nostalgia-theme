@@ -1,0 +1,71 @@
+body {
+    @apply bg-lavender-grey-100 text-slate-700 font-sans antialiased;
+}
+
+a {
+    @apply text-saffron-orange-500 transition duration-[50ms] ease-in-out;
+}
+
+a:hover {
+    @apply text-saffron-orange-400;
+}
+
+select {
+    @apply text-sm rounded-sm shadow-sm border-slate-200 pl-2 py-2 focus:border-apricot-500 focus:ring-apricot-500 inline-block w-auto;
+
+    &:disabled {
+        @apply cursor-not-allowed opacity-50;
+    }
+}
+
+pre {
+    @apply overflow-auto;
+}
+code {
+    @apply text-sm bg-zinc-50 border overflow-x-auto max-w-full;
+}
+
+blockquote {
+    @apply bg-zinc-50 border border-zinc-200 p-3 rounded;
+}
+
+cite {
+    @apply block text-sm italic;
+}
+
+cite + blockquote {
+    @apply mt-2;
+}
+
+input[type=checkbox] {
+    @apply appearance-none border border-deep-lavender-300 text-deep-lavender-500 cursor-pointer p-1;
+
+    &:focus {
+        @apply ring-apricot-500
+    }
+
+    &:disabled {
+        @apply text-deep-lavender-300;
+    }
+}
+
+textarea,
+input[type=email],
+input[type=date],
+input[type=number],
+input[type=password],
+input[type=text] {
+    @apply block w-full placeholder:text-slate-300 border-gray-300 focus:border-apricot-500 focus:ring-apricot-500 rounded-md shadow-sm;
+}
+
+.inline-label {
+    @apply flex items-center space-x-1 cursor-pointer
+}
+
+.copyright {
+    @apply mt-4 text-center p-4 text-xs;
+}
+
+.saved-message {
+    @apply text-sm text-gray-600 mr-2;
+}

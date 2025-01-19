@@ -1,0 +1,15 @@
+.alert {
+    @apply max-w-xl mx-auto mb-6 rounded-lg border border-slate-300 text-slate-700 bg-slate-100 text-sm p-4 border-2;
+
+    &--notice {
+        @apply border-deep-lavender-300 text-deep-lavender-700 bg-deep-lavender-100
+    }
+
+    &__icon {
+        @apply text-deep-lavender-500;
+    }
+
+    & > div {
+        @apply flex items-start;
+    }
+}

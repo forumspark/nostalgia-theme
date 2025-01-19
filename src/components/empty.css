@@ -1,0 +1,7 @@
+.empty-message {
+    @apply p-4 text-center text-sm italic text-zinc-500;
+}
+
+.empty-message.empty-message--inline {
+    @apply p-0;
+}

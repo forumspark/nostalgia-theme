@@ -1,0 +1,3 @@
+.badge {
+    @apply bg-zinc-200 text-gray-600 rounded px-2 py-1 text-xs inline-block;
+}

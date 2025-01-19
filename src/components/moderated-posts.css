@@ -1,0 +1,29 @@
+.panel--moderated-posts .panel__content {
+    @apply divide-y divide-lavender-grey-300;
+}
+
+.moderated-post {
+    &__details {
+        @apply grid grid-cols-2 divide-x;
+
+        > div {
+            @apply bg-lavender-grey-50 shadow-highlight flex flex-col justify-center p-4;
+        }
+    }
+
+    &__reason {
+        @apply border-t border-lavender-grey-300 bg-lavender-grey-50 shadow-highlight flex flex-col justify-center p-4;
+    }
+
+    &__content {
+        @apply bg-white border-t border-lavender-grey-300 shadow-highlight flex flex-col justify-center p-4;
+    }
+
+    &__topic {
+        @apply font-bold;
+    }
+
+    &__meta {
+        @apply text-deep-lavender-500 text-sm;
+    }
+}

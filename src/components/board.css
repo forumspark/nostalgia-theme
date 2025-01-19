@@ -1,0 +1,36 @@
+#wrap {
+    @apply bg-white sm:border mx-auto max-w-7xl;
+}
+
+#wrap main {
+    @apply sm:px-6 px-0
+}
+
+.board-logo {
+    @apply shrink-0 flex items-center;
+}
+
+.board-actions {
+    @apply bg-slate-50 border-t border-b my-6 py-2 px-4 sm:px-6 grid items-center grid-cols-2 gap-2 sm:flex;
+    @apply text-slate-500;
+
+    &__theme-selector {
+        @apply col-span-2 sm:col-span-1 flex items-center text-sm space-x-2 sm:mr-auto;
+    }
+
+    &__mark-read {
+        @apply text-xs mr-auto sm:mr-2;
+    }
+
+    &__time {
+        @apply flex items-center text-xs justify-end;
+
+        svg {
+            @apply text-slate-500;
+        }
+
+        a {
+            @apply text-slate-500
+        }
+    }
+}

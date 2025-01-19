@@ -1,0 +1,26 @@
+.data-grid {
+    @apply divide-y text-sm;
+}
+
+.data-grid__header {
+    @apply bg-gradient-to-b from-lavender-grey-200 to-lavender-grey-50 shadow-highlight text-slate-500 font-medium text-sm grid text-sm divide-x;
+}
+
+.data-grid__header > div {
+    @apply p-2;
+}
+
+.data-grid__row {
+    @apply grid text-sm divide-x;
+}
+
+.data-grid__row > div {
+    @apply p-2 items-center sm:flex ;
+}
+
+.data-grid--bans {
+    .data-grid__header,
+    .data-grid__row {
+        @apply grid-cols-2;
+    }
+}

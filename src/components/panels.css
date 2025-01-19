@@ -1,0 +1,128 @@
+.panel {
+    @apply bg-white;
+
+    .panel__title {
+        @apply flex items-center p-3 shadow-highlight text-white sunset;
+
+        &__actions {
+            @apply ml-auto flex-shrink-0 flex items-center text-sm space-x-2;
+        }
+    }
+
+    &__expander {
+        @apply p-0;
+    }
+
+    &--collapsed .panel__title {
+        @apply bg-gradient-to-t;
+    }
+
+    .panel__title h2 {
+        @apply text-lg font-semibold;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    }
+
+    .panel__title a:not(.btn) {
+        @apply text-white;
+    }
+
+    &--secondary .panel__title {
+        @apply shadow-highlight text-white font-bold bg-gradient-to-b from-deep-lavender-500 to-deep-lavender-400 border border-deep-lavender-500;
+    }
+
+    .panel__content {
+        @apply border p-4;
+    }
+
+    .panel__content--flush {
+        @apply p-0;
+    }
+
+    .panel__footer {
+        @apply h-4 border border-lavender-grey-200 bg-gradient-to-b from-lavender-grey-300 to-lavender-grey-50 shadow-highlighter;
+    }
+
+    &--quick-reply {
+        @apply mt-6;
+    }
+
+    .panel__actions {
+        @apply p-4 bg-lavender-grey-50 flex justify-center gap-4 border-t shadow-inset-px;
+    }
+
+    .panel__sub-header {
+        @apply p-2 bg-gradient-to-b from-lavender-grey-100 to-lavender-grey-50 shadow-inset-px text-slate-500 font-medium text-sm;
+    }
+
+    .panel__sub-header--flush {
+        @apply p-0;
+    }
+
+    &.topiclist .panel__sub-header {
+        @apply hidden sm:flex;
+    }
+}
+
+
+.sub-header {
+    @apply flex items-center bg-gradient-to-b from-lavender-grey-100 to-lavender-grey-50 shadow-inset-px text-slate-500 font-medium text-sm;
+}
+
+.sub-header > div {
+    @apply p-2;
+}
+
+.sub-header .topic-name {
+    @apply flex-1;
+}
+
+.sub-header .topic-author {
+    @apply text-center;
+}
+
+.sub-header .topic-details {
+    @apply w-1/3 flex-shrink-0 flex items-center;
+}
+
+.sub-header .topic-details .replies, .sub-header .topic-details .views  {
+    @apply w-24 text-center flex-shrink-0;
+}
+
+.sub-header .topic-details .last-post {
+    @apply flex-1;
+}
+
+.topic-actions {
+    @apply hidden ml-auto divide-x sm:flex items-center -mx-2;
+
+    & > a, button {
+        @apply px-2;
+    }
+}
+
+.topic-actions--responsive {
+    @apply block sm:hidden mr-0;
+}
+
+.topic-actions__trigger {
+    @apply bg-transparent
+}
+
+.panel:not(.panel-mobile-menu) + .panel {
+    @apply mt-6;
+}
+
+.panel-mobile-menu {
+    @apply mb-6 block sm:hidden;
+    .panel__title button {
+        @apply flex items-center gap-2;
+    }
+}
+
+.panel-mobile-menu + .panel {
+    @apply hidden sm:block;
+}
+
+.panel-menu {
+    @apply hidden sm:block;
+}
