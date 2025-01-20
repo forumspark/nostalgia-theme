@@ -24,6 +24,10 @@
 
         &__info {
             @apply text-slate-400 p-2 text-sm flex items-center justify-center;
+
+            time + span {
+                @apply mr-auto ml-1;
+            }
         }
 
         & > .avatar {
@@ -37,6 +41,10 @@
         .reply__user {
             @apply sm:w-1/5 flex-shrink-0 border-r p-2 text-center min-w-0;
             @apply hidden sm:block;
+
+            .avatar {
+                @apply mx-auto;
+            }
         }
 
         .reply__content {
@@ -73,8 +81,6 @@
 .topic .replies {
     @apply divide-y bg-white border-t;
 }
-
-
 
 .reply__actions {
     @apply flex border-b border-lavender-grey-100 bg-lavender-grey-50;
@@ -114,6 +120,9 @@
 
 .quick-reply__user {
     @apply hidden sm:block w-1/5 flex-shrink-0 border-r text-center p-4;
+    .avatar {
+        @apply mx-auto;
+    }
 }
 
 .quick-reply__input {

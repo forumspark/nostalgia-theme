@@ -53,8 +53,9 @@
 .menu {
     @apply p-4;
 
+    &-items,
     &__items {
-        @apply space-y-2;
+        @apply space-y-2 text-sm;
     }
 
     &-item--labelled {

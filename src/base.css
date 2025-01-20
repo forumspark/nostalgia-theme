@@ -58,6 +58,13 @@ input[type=text] {
     @apply block w-full placeholder:text-slate-300 border-gray-300 focus:border-apricot-500 focus:ring-apricot-500 rounded-md shadow-sm;
 }
 
+textarea#content {
+    @apply mt-1 resize-none;
+    & + div {
+        @apply mt-4;
+    }
+}
+
 .inline-label {
     @apply flex items-center space-x-1 cursor-pointer
 }

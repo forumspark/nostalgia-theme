@@ -132,3 +132,7 @@
     @apply space-y-6;
 }
 
+.topiclist {
+    @apply mt-6;
+}
+

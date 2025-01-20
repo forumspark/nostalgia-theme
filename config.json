@@ -1,1 +1,6 @@
-{"name":"Nostalgia","version":"0.0.1","build_dir":"build","theme_id":29}
+{
+  "name":"Nostalgia",
+  "version":"0.0.1",
+  "build_dir":"build",
+  "theme_id":4
+}
